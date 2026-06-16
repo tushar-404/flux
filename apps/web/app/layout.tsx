@@ -1,0 +1,51 @@
+import { Metadata } from "next";
+import "./globals.css";
+import { GoogleOAuthProvider } from "@react-oauth/google";
+import { AuthProvider } from "./AuthProvider";
+import Script from "next/script";
+import ClientNavbar from "@/shared/clients/navbarClient";
+import { Analytics } from "@vercel/analytics/next";
+
+export const metadata: Metadata = {
+  title: "Slyme | Social Network",
+  description: "Connect with your local community through geo-locked hubs, real-time coordinate discovery, and hyperlocal gigs.",
+  keywords: ["social network", "maps", "local community", "gigs", "real-time chat", "Slyme"],
+};
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <html lang="en">
+      <head>
+        <Script id="bfcache-fix" strategy="beforeInteractive">
+          {`
+      (function(){
+        var n=performance.getEntriesByType("navigation");
+        if(n.length&&n[0].type==="back_forward"){
+          window.location.reload();
+          return;
+        }
+        window.addEventListener("pageshow",function(e){
+          if(e.persisted) window.location.reload();
+        });
+      })()
+    `}
+        </Script>
+      </head>
+      <body className="min-h-full flex flex-col">
+        <AuthProvider>
+          <GoogleOAuthProvider
+            clientId={process.env.NEXT_PUBLIC_GOOGLE_CLIENT_ID!}
+          >
+            <ClientNavbar />
+            {children}
+          </GoogleOAuthProvider>
+        </AuthProvider>
+        <Analytics />
+      </body>
+    </html>
+  );
+}

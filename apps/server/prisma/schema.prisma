@@ -1,0 +1,113 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model User {
+  id    String @id @default(cuid())
+  email String @unique
+  googleId String? @unique
+  username String? @unique
+
+  name  String?
+  bio   String?
+  avatarUrl String?
+  coverImageUrl String?
+  password String?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  rooms    MapRoom[] @relation("UserRooms")    
+  mapRooms MapRoom[] @relation("MapRoomCreator")
+  gigs     Gig[]     @relation("GigCreator")
+
+  seenMessages MessageSeen[]
+  groupMessages GroupMessage[] @relation("UserGroupMessages")
+}
+
+model MapRoom {
+  id          String   @id @default(uuid())
+  name        String
+  description String?
+  latitude    Float
+  longitude   Float
+  createdAt   DateTime @default(now())
+
+  createdBy User   @relation("MapRoomCreator", fields: [creatorId], references: [id])
+  creatorId String
+
+  members User[] @relation("UserRooms")
+  gigs    Gig[]  @relation("RoomGigs")
+
+  type     String?
+  imageUrl String?
+
+  groupMessages GroupMessage[] @relation("RoomGroupMessages")
+}
+
+model Gig {
+  id          String    @id @default(uuid())
+  title       String
+  description String?
+  latitude    Float
+  longitude   Float
+  date        DateTime?
+  reward      String?
+  gigTime     DateTime?
+  expiresAt   DateTime?
+  createdAt   DateTime  @default(now())
+
+  createdBy User   @relation("GigCreator", fields: [creatorId], references: [id])
+  creatorId String
+
+  room   MapRoom? @relation("RoomGigs", fields: [roomId], references: [id])
+  roomId String?
+
+  type      String?
+  imageUrls String[] @default([])
+}
+
+model GroupMessage {
+  id        String   @id @default(uuid())
+  content   String
+  createdAt DateTime @default(now())
+
+  sender   User   @relation("UserGroupMessages", fields: [senderId], references: [id], onDelete: Cascade)
+  senderId String
+
+  room   MapRoom @relation("RoomGroupMessages", fields: [roomId], references: [id], onDelete: Cascade)
+  roomId String
+
+  seenBy MessageSeen[]
+}
+
+model MessageSeen {
+  id String @id @default(uuid())
+
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+  userId String
+
+  message   GroupMessage @relation(fields: [messageId], references: [id], onDelete: Cascade)
+  messageId String
+
+  createdAt DateTime @default(now())
+
+  @@unique([userId, messageId])
+  @@index([messageId])
+}
+
+model PasswordReset {
+  id        String   @id @default(cuid())
+  email     String
+  otp       String
+  used      Boolean  @default(false)
+  expiresAt DateTime
+  createdAt DateTime @default(now())
+
+  @@index([email])
+}
