@@ -22,7 +22,7 @@ importers:
     dependencies:
       '@prisma/adapter-pg':
         specifier: ^7.6.0
-        version: 7.6.0
+        version: 7.8.0
       '@prisma/client':
         specifier: ^6.18.0
         version: 6.18.0(prisma@6.18.0(typescript@5.9.2))(typescript@5.9.2)
@@ -766,8 +766,8 @@ packages:
     resolution: {integrity: sha512-nn5ozdjYQpUCZlWGuxcJY/KpxkWQs4DcbMCmKojjyrYDEAGy4Ce19NN4v5MduafTwJlbKc99UA8YhSVqq9yPZA==}
     engines: {node: '>=12.4.0'}
 
-  '@prisma/adapter-pg@7.6.0':
-    resolution: {integrity: sha512-BjHNmJqqa42NqJSDPnXUfwUofWo8LJY7Ui2gqxN4DmAOb+H/gGKv+hln2Xq/1kSJXPW5AXMXuNiPDMpywvyIOw==}
+  '@prisma/adapter-pg@7.8.0':
+    resolution: {integrity: sha512-ygb3UkerK3v8MDpXVgCISdRNDozpxh6+JVJgiIGbSr5KBgz10LLf5ejUskPGoXlsIjxsOu6nuy1JVQr2EKGSlg==}
 
   '@prisma/client@6.18.0':
     resolution: {integrity: sha512-jnL2I9gDnPnw4A+4h5SuNn8Gc+1mL1Z79U/3I9eE2gbxJG1oSA+62ByPW4xkeDgwE0fqMzzpAZ7IHxYnLZ4iQA==}
@@ -787,11 +787,11 @@ packages:
   '@prisma/debug@6.18.0':
     resolution: {integrity: sha512-PMVPMmxPj0ps1VY75DIrT430MoOyQx9hmm174k6cmLZpcI95rAPXOQ+pp8ANQkJtNyLVDxnxVJ0QLbrm/ViBcg==}
 
-  '@prisma/debug@7.6.0':
-    resolution: {integrity: sha512-LpHr3qos4lQZ6sxwjStf59YBht7m9/QF7NSQsMH6qGENWZu2w3UkQUGn1h5iRkDjnWRj3VHykOu9qFhps4ADvA==}
+  '@prisma/debug@7.8.0':
+    resolution: {integrity: sha512-p+QZReysDUqXC+mk17q9a+Y/qzh4c2KYliDK30buYUyfrGeTGSyfmc0AIrJRhZJrLHhRiJa9Au/J72h3C+szvA==}
 
-  '@prisma/driver-adapter-utils@7.6.0':
-    resolution: {integrity: sha512-D8j3p0RnhLuufMaRLX6QqtGgPC5Ao3l5oFP6Q5AL0rTHi4vna+NzGEipwCsfvcSvaGFCbsH3lsTMbb4WvY+ovA==}
+  '@prisma/driver-adapter-utils@7.8.0':
+    resolution: {integrity: sha512-/Q13o0ZT0rjc1Xk0Q9KhZYwuq2EW/vSbWUBKfgEKkaCuB/Sg6bqnjmTZqC5cD4d6y1vfFAEwBRzfzoSMIVJ55A==}
 
   '@prisma/engines-version@6.18.0-8.34b5a692b7bd79939a9a2c3ef97d816e749cda2f':
     resolution: {integrity: sha512-T7Af4QsJQnSgWN1zBbX+Cha5t4qjHRxoeoWpK4JugJzG/ipmmDMY5S+O0N1ET6sCBNVkf6lz+Y+ZNO9+wFU8pQ==}
@@ -1586,8 +1586,8 @@ packages:
   citty@0.1.6:
     resolution: {integrity: sha512-tskPPKEs8D2KPafUypv2gxwJP8h/OaJmC82QQGGDQcHvXX43xF2VDACcJVmZ0EuSxkpO9Kc4MlrA3q0+FG58AQ==}
 
-  citty@0.2.1:
-    resolution: {integrity: sha512-kEV95lFBhQgtogAPlQfJJ0WGVSokvLr/UEoFPiKKOXF7pl98HfUVUD0ejsuTCld/9xH9vogSywZ5KqHzXrZpqg==}
+  citty@0.2.2:
+    resolution: {integrity: sha512-+6vJA3L98yv+IdfKGZHBNiGW5KHn22e/JwID0Strsz8h4S/csAu/OuICwxrg44k5MRiZHWIo8XXuJgQTriRP4w==}
 
   client-only@0.0.1:
     resolution: {integrity: sha512-IV3Ou0jSMzZrd3pZ48nLkT9DA7Ag1pnPzaiQhpW7c3RbcqqzvzzVu+L8gfqMp/8IM2MQtSiqaCxrrcfu8I8rMA==}
@@ -1709,8 +1709,8 @@ packages:
     resolution: {integrity: sha512-8QmQKqEASLd5nx0U1B1okLElbUuuttJ/AnYmRXbbbGDWh6uS208EjD4Xqq/I9wK7u0v6O08XhTWnt5XtEbR6Dg==}
     engines: {node: '>= 0.4'}
 
-  defu@6.1.4:
-    resolution: {integrity: sha512-mEQCMmwJu317oSz8CwdIOdwf3xMif1ttiM8LTufzc3g6kR+9Pe236twL8j3IYT1F7GfRgGcW6MWxzZjLIkuHIg==}
+  defu@6.1.7:
+    resolution: {integrity: sha512-7z22QmUWiQ/2d0KkdYmANbRUVABpZ9SNYyH5vx6PZ+nE5bcC0l7uFvEfHlyld/HcGBFTL536ClDt3DEcSlEJAQ==}
 
   depd@2.0.0:
     resolution: {integrity: sha512-g7nH6P6dyDioJogAAGprGpCtVImJhpPk/roCzdb3fIh61/s/nPsfR6onyMwkCAR/OlC3yBC0lESvUoQEAssIrw==}
@@ -2713,8 +2713,8 @@ packages:
     resolution: {integrity: sha512-6eZs5Ls3WtCisHWp9S2GUy8dqkpGi4BVSz3GaqiE6ezub0512ESztXUwUB6C6IKbQkY2Pnb/mD4WYojCRwcwLA==}
     engines: {node: '>=0.10.0'}
 
-  nypm@0.6.5:
-    resolution: {integrity: sha512-K6AJy1GMVyfyMXRVB88700BJqNUkByijGJM8kEHpLdcAt+vSQAVfkWWHYzuRXHSY6xA2sNc5RjTj0p9rE2izVQ==}
+  nypm@0.6.7:
+    resolution: {integrity: sha512-s3ds97SD5pd1dULE+tHUk1DrV0cSHOnsfpcdGATJ8JpBo21DoKqN9exTH4/2nhPQNOLomBdTFMicN94S4DrZrQ==}
     engines: {node: '>=18'}
     hasBin: true
 
@@ -2808,30 +2808,30 @@ packages:
   perfect-debounce@1.0.0:
     resolution: {integrity: sha512-xCy9V055GLEqoFaHoC1SoLIaLmWctgCUaBaWxDZ7/Zx4CTyX7cJQLJOok/orfjZAh9kEYpjJa4d0KcJmCbctZA==}
 
-  pg-cloudflare@1.3.0:
-    resolution: {integrity: sha512-6lswVVSztmHiRtD6I8hw4qP/nDm1EJbKMRhf3HCYaqud7frGysPv7FYJ5noZQdhQtN2xJnimfMtvQq21pdbzyQ==}
+  pg-cloudflare@1.4.0:
+    resolution: {integrity: sha512-Vo7z/6rrQYxpNRylp4Tlob2elzbh+N/MOQbxFVWCxS7oEx6jF53GTJFxK2WWpKuBRkmiin4Mt+xofFDjx09R0A==}
 
-  pg-connection-string@2.12.0:
-    resolution: {integrity: sha512-U7qg+bpswf3Cs5xLzRqbXbQl85ng0mfSV/J0nnA31MCLgvEaAo7CIhmeyrmJpOr7o+zm0rXK+hNnT5l9RHkCkQ==}
+  pg-connection-string@2.13.0:
+    resolution: {integrity: sha512-EMnU9E2fSULdsbErBbMaXJvFeD9B4+nPcM3f+4lsiCR0BHLPrLVjv3DbyM2hgQQviKJaTWIRRTjKjWlHg3p2ig==}
 
   pg-int8@1.0.1:
     resolution: {integrity: sha512-WCtabS6t3c8SkpDBUlb1kjOs7l66xsGdKpIPZsg4wR+B3+u9UAum2odSsF9tnvxg80h4ZxLWMy4pRjOsFIqQpw==}
     engines: {node: '>=4.0.0'}
 
-  pg-pool@3.13.0:
-    resolution: {integrity: sha512-gB+R+Xud1gLFuRD/QgOIgGOBE2KCQPaPwkzBBGC9oG69pHTkhQeIuejVIk3/cnDyX39av2AxomQiyPT13WKHQA==}
+  pg-pool@3.14.0:
+    resolution: {integrity: sha512-gKtPkFdQPU3DksooVLi9LsjZxrsBUZIpa+7aVx+LV5pNh0KzP4Zleud2po+ConrxbuXGBJ6Hfer6hdgpIBpBaw==}
     peerDependencies:
       pg: '>=8.0'
 
-  pg-protocol@1.13.0:
-    resolution: {integrity: sha512-zzdvXfS6v89r6v7OcFCHfHlyG/wvry1ALxZo4LqgUoy7W9xhBDMaqOuMiF3qEV45VqsN6rdlcehHrfDtlCPc8w==}
+  pg-protocol@1.14.0:
+    resolution: {integrity: sha512-n5taZ1kO3s9ngDTVxsEznOqCyToTgz0FLuPq0B33COy5pPpuWJpY3/2oRBVETuOgzdqRXfWpM9HIhp2LBBT1BA==}
 
   pg-types@2.2.0:
     resolution: {integrity: sha512-qTAAlrEsl8s4OiEQY69wDvcMIdQN6wdz5ojQiOy6YRMuynxenON0O5oCpJI6lshc6scgAY8qvJ2On/p+CXY0GA==}
     engines: {node: '>=4'}
 
-  pg@8.20.0:
-    resolution: {integrity: sha512-ldhMxz2r8fl/6QkXnBD3CR9/xg694oT6DZQ2s6c/RI28OjtSOpxnPrUCGOBJ46RCUxcWdx3p6kw/xnDHjKvaRA==}
+  pg@8.21.0:
+    resolution: {integrity: sha512-AUP1EYJuHraQGsVoCQVIcM7TEJVGtDzxWtGFZd8rds9d+CCXlU5Js1rYgfLNvxy9iJrpHjGrRjoi/3BT9fRyiA==}
     engines: {node: '>= 16.0.0'}
     peerDependencies:
       pg-native: '>=3.0.1'
@@ -2853,8 +2853,8 @@ packages:
     resolution: {integrity: sha512-5gTmgEY/sqK6gFXLIsQNH19lWb4ebPDLA4SdLP7dsWkIXHWlG66oPuVvXSGFPppYZz8ZDZq0dYYrbHfBCVUb1Q==}
     engines: {node: '>=12'}
 
-  pkg-types@2.3.0:
-    resolution: {integrity: sha512-SIqCzDRg0s9npO5XQ3tNZioRY1uK06lA41ynBC1YmFTmnY6FjUjVt6s4LoADmwoig1qqD0oK8h1p/8mlMx8Oig==}
+  pkg-types@2.3.1:
+    resolution: {integrity: sha512-y+ichcgc2LrADuhLNAx8DFjVfgz91pRxfZdI3UDhxHvcVEZsenLO+7XaU5vOp0u/7V/wZ+plyuQxtrDlZJ+yeg==}
 
   plimit-lit@1.6.1:
     resolution: {integrity: sha512-B7+VDyb8Tl6oMJT9oSO2CW8XC/T4UcJGrwOVoNGwOQsQYhlpfajmrMj5xeejqaASq3V/EqThyOeATEOMuSEXiA==}
@@ -3246,8 +3246,8 @@ packages:
     resolution: {integrity: sha512-1MOpMXuhGzGL5TTCZFItxCc0AARf1EZFQkGqMm7ERKj8+Hgr5oLvJOVFcC+lRmR8hCe2S3jC4T5D7Vg/d7/fhA==}
     engines: {node: '>=6'}
 
-  tinyexec@1.0.4:
-    resolution: {integrity: sha512-u9r3uZC0bdpGOXtlxUIdwf9pkmvhqJdrVCH9fapQtgy/OeTTMZ1nqH7agtvEfmGui6e1XxjcdrlxvxJvc3sMqw==}
+  tinyexec@1.2.4:
+    resolution: {integrity: sha512-SHf/r48b7vOrjve9PxJo3MN5v5yuyjHvdUcrQffT3WXMUfnGmHDVbC4k3sHJaJTgZCwpUplIaAo5ANtMyp3YHg==}
     engines: {node: '>=18'}
 
   tinyglobby@0.2.15:
@@ -3871,11 +3871,11 @@ snapshots:
 
   '@nolyfill/is-core-module@1.0.39': {}
 
-  '@prisma/adapter-pg@7.6.0':
+  '@prisma/adapter-pg@7.8.0':
     dependencies:
-      '@prisma/driver-adapter-utils': 7.6.0
+      '@prisma/driver-adapter-utils': 7.8.0
       '@types/pg': 8.20.0
-      pg: 8.20.0
+      pg: 8.21.0
       postgres-array: 3.0.4
     transitivePeerDependencies:
       - pg-native
@@ -3896,11 +3896,11 @@ snapshots:
 
   '@prisma/debug@6.18.0': {}
 
-  '@prisma/debug@7.6.0': {}
+  '@prisma/debug@7.8.0': {}
 
-  '@prisma/driver-adapter-utils@7.6.0':
+  '@prisma/driver-adapter-utils@7.8.0':
     dependencies:
-      '@prisma/debug': 7.6.0
+      '@prisma/debug': 7.8.0
 
   '@prisma/engines-version@6.18.0-8.34b5a692b7bd79939a9a2c3ef97d816e749cda2f': {}
 
@@ -4245,7 +4245,7 @@ snapshots:
   '@types/pg@8.20.0':
     dependencies:
       '@types/node': 22.15.3
-      pg-protocol: 1.13.0
+      pg-protocol: 1.14.0
       pg-types: 2.2.0
 
   '@types/qs@6.15.0': {}
@@ -4624,7 +4624,7 @@ snapshots:
     dependencies:
       chokidar: 4.0.3
       confbox: 0.2.4
-      defu: 6.1.4
+      defu: 6.1.7
       dotenv: 16.6.1
       exsolve: 1.0.8
       giget: 2.0.0
@@ -4632,7 +4632,7 @@ snapshots:
       ohash: 2.0.11
       pathe: 2.0.3
       perfect-debounce: 1.0.0
-      pkg-types: 2.3.0
+      pkg-types: 2.3.1
       rc9: 2.1.2
 
   call-bind-apply-helpers@1.0.2:
@@ -4681,7 +4681,7 @@ snapshots:
     dependencies:
       consola: 3.4.2
 
-  citty@0.2.1: {}
+  citty@0.2.2: {}
 
   client-only@0.0.1: {}
 
@@ -4781,7 +4781,7 @@ snapshots:
       has-property-descriptors: 1.0.2
       object-keys: 1.1.1
 
-  defu@6.1.4: {}
+  defu@6.1.7: {}
 
   depd@2.0.0: {}
 
@@ -5427,9 +5427,9 @@ snapshots:
     dependencies:
       citty: 0.1.6
       consola: 3.4.2
-      defu: 6.1.4
+      defu: 6.1.7
       node-fetch-native: 1.6.7
-      nypm: 0.6.5
+      nypm: 0.6.7
       pathe: 2.0.3
 
   glob-parent@5.1.2:
@@ -5943,11 +5943,11 @@ snapshots:
 
   normalize-path@3.0.0: {}
 
-  nypm@0.6.5:
+  nypm@0.6.7:
     dependencies:
-      citty: 0.2.1
+      citty: 0.2.2
       pathe: 2.0.3
-      tinyexec: 1.0.4
+      tinyexec: 1.2.4
 
   object-assign@4.1.1: {}
 
@@ -6044,18 +6044,18 @@ snapshots:
 
   perfect-debounce@1.0.0: {}
 
-  pg-cloudflare@1.3.0:
+  pg-cloudflare@1.4.0:
     optional: true
 
-  pg-connection-string@2.12.0: {}
+  pg-connection-string@2.13.0: {}
 
   pg-int8@1.0.1: {}
 
-  pg-pool@3.13.0(pg@8.20.0):
+  pg-pool@3.14.0(pg@8.21.0):
     dependencies:
-      pg: 8.20.0
+      pg: 8.21.0
 
-  pg-protocol@1.13.0: {}
+  pg-protocol@1.14.0: {}
 
   pg-types@2.2.0:
     dependencies:
@@ -6065,15 +6065,15 @@ snapshots:
       postgres-date: 1.0.7
       postgres-interval: 1.2.0
 
-  pg@8.20.0:
+  pg@8.21.0:
     dependencies:
-      pg-connection-string: 2.12.0
-      pg-pool: 3.13.0(pg@8.20.0)
-      pg-protocol: 1.13.0
+      pg-connection-string: 2.13.0
+      pg-pool: 3.14.0(pg@8.21.0)
+      pg-protocol: 1.14.0
       pg-types: 2.2.0
       pgpass: 1.0.5
     optionalDependencies:
-      pg-cloudflare: 1.3.0
+      pg-cloudflare: 1.4.0
 
   pgpass@1.0.5:
     dependencies:
@@ -6085,7 +6085,7 @@ snapshots:
 
   picomatch@4.0.3: {}
 
-  pkg-types@2.3.0:
+  pkg-types@2.3.1:
     dependencies:
       confbox: 0.2.4
       exsolve: 1.0.8
@@ -6170,7 +6170,7 @@ snapshots:
 
   rc9@2.1.2:
     dependencies:
-      defu: 6.1.4
+      defu: 6.1.7
       destr: 2.0.5
 
   react-dom@19.0.0-rc.1(react@19.0.0-rc.1):
@@ -6568,7 +6568,7 @@ snapshots:
 
   tapable@2.3.2: {}
 
-  tinyexec@1.0.4: {}
+  tinyexec@1.2.4: {}
 
   tinyglobby@0.2.15:
     dependencies:

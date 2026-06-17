@@ -80,11 +80,11 @@ export const registerChatHandlers = (io: Server, socket: Socket) => {
       if (room) {
         const allSockets = await io.fetchSockets();
         const recipients = room.members.filter(
-          (member) => member.id !== userId,
+          (member: { id: string }) => member.id !== userId,
         );
 
         await Promise.all(
-          recipients.map(async (member) => {
+          recipients.map(async (member: { id: string }) => {
             const count = await getUnseenCount(member.id);
 
             allSockets
